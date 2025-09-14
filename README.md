@@ -29,9 +29,13 @@ This demonstrates how simple optimization patterns can make a real difference in
 
 ## 📸 Screenshot
 
-("./src/assets/SCREEN.png")
+![App Screenshot](./src/assets/SCREEN.png)
 
-<a href="https://aymaq-code.github.io/React-Optimization-/" target="_blank">🌐 Live Demo</a>
+## 🌐 Live Demo
+
+<a href="https://aymaq-code.github.io/React-Optimization-/" target="_blank" rel="noopener noreferrer">
+  Open Live Demo
+</a>
 
 ---
 
