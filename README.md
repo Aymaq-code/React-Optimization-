@@ -1,12 +1,38 @@
-# React + Vite
+# ⚡ React Optimization Example
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates **React optimization techniques** using `React.memo` and `useCallback`.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **`React.memo`** is used to prevent unnecessary re-renders of child components when props do not change.
+- **`useCallback`** ensures functions are memoized and not recreated on every render.
+- **Dark/Light mode toggle** to demonstrate prop updates.
+- **Counter functionality** to show selective re-renders.
 
-## Expanding the ESLint configuration
+## 📊 How It Works
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- When the **counter value** changes, only the `AppBody` component re-renders.
+- The `AppHead` and `AppButtons` components remain stable thanks to memoization.
+- This improves rendering performance and makes the app more efficient.
+
+## 🛠️ Tech Stack
+
+- React
+- React.memo
+- useCallback
+- React Profiler (for performance testing)
+
+## 🔍 Optimization Results
+
+By using **React Profiler**, we can see that only the necessary components are re-rendered when state changes.  
+This demonstrates how simple optimization patterns can make a real difference in React apps.
+
+## 📸 Screenshot
+
+("./src/assets/SCREEN.png")
+
+<a href="https://aymaq-code.github.io/React-Optimization-/" target="_blank">🌐 Live Demo</a>
+
+---
+
+Made with ❤️ using React.

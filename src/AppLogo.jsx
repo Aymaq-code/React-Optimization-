@@ -1,11 +1,11 @@
-import React from "react";
-
-const AppLogo = React.memo(() => {
+import { memo } from "react";
+import LOGO from "./assets/react_logo.png";
+function AppLogo() {
   return (
     <div className="logo">
-      <img src="/src/assets/react_logo.png" alt="logo" />
+      <img src={LOGO} alt="logo" />
     </div>
   );
-});
+}
 
-export default AppLogo;
+export default memo(AppLogo);
